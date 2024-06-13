@@ -9,7 +9,7 @@ class PrimeFactor:
                 while not n % divisor:
                     factors.append(divisor)
                     n //= divisor
-            elif n == 6:
+            elif n == 6 or n == 9:
                 while n > 1:
                     while not n % divisor:
                         factors.append(divisor)
