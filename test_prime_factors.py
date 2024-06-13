@@ -25,3 +25,6 @@ class TestPrimeFactor(TestCase):
 
     def test_prime_factor_9(self):
         self.assertEqual(self.pf.forward(9), [3,3])
+
+    def test_prime_factor_12(self):
+        self.assertEqual(self.pf.forward(12), [2,2,3])
