@@ -1,3 +1,12 @@
+
+
 class PrimeFactor:
     def forward(self, n):
-        pass
+        factors = []
+        divisor = 2
+        while n > 1:
+            while not n % divisor:
+                factors.append(divisor)
+                n //= divisor
+            divisor += 1
+        return factors
